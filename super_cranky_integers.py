@@ -6,7 +6,7 @@
 
 def main():
 	""" Main function """
-	limit = 10 ** 7
+	limit = 10 ** 6
 	count = 0
 
 	for i in range(11, limit):
