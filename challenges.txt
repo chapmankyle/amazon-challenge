@@ -1,0 +1,149 @@
+Dots per Square (http://www.adccpt.com/#/challenges/2c9f9c2e6d8158c1016d83917dc70000)
+---------------
+Zero or more dots are made in each of the cells of a 4x4 square grid in such a way that no 2x2 square within the grid contains more than 2 dots. In the diagram, 2 of the possible 20958 ways to do this are shown. Arrangements that are rotations or reflections of one another are counted separately.
+
+In how many ways may dots be placed in the cells of a 9x9 grid such that no 3x3 square within the grid contains more than 3 dots?
+
+
+Squirrel Run (http://www.adccpt.com/#/challenges/2c9f888c6d8158c5016d838cc1380000)
+------------
+A squirrel starts from the center cell of a 5 x 5 grid and does a random run during which it hops at every step to a neighboring cell with equal probability (hops are to the left, right, up, or down; thus corner cells have 2 neighbors, edge cells have 3, and all other cells have 4).
+
+In the top-left corner of the grid is an acorn. When the squirrel reaches the top-left cell of the grid, it picks up the acorn and continues to hop, carrying the acorn as it goes. The squirrel’s run comes to an end when it reaches the bottom-right cell of the grid while carrying the acorn—if it reaches the bottom-right cell without the acorn, it continues. The average hop-count of its run is 159.64848, rounded to 5 decimal places.
+
+The same squirrel now starts instead from the center of a 9 x 9 grid, and hops as before, but with the following difference:
+—if it reaches the top-left cell while not carrying the acorn, it picks it up and carries it away on its next hop
+—if it reaches the top-left cell while already carrying the acorn, it puts it down and leaves it behind on its next hop.
+
+What is the average hop-count of runs that convey the acorn to the bottom-right cell of the grid under these conditions, rounded to 5 decimal places?
+
+
+Asteroids (http://www.adccpt.com/#/challenges/2c9f9c2e6b4077f5016c1cf6466d0011)
+---------
+Asteroids with distinct integer periods revolve around a sun in the same plane, rotating along perfectly circular orbits in the same direction. At the outset, all asteroids are lined up on the same side of the sun. In the diagram, two asteroids with periods 3 and 5 are shown at the top left.
+
+The asteroid labeled 3 takes 3 years to orbit the sun, while the asteroid labeled 5 takes 5 years. An asteroid with a smaller period always occupies an orbit with a smaller radius than asteroids with larger periods. As they rotate, they move apart due to differences in their orbital speeds, as shown in the diagram at the top right.
+
+After 3.75 years, the asteroids will line up with the sun for the first time, in this case on opposite sides of the sun, as shown in the diagram at the bottom left.
+
+We call the shortest time before a configuration of asteroids line up through the sun its alignment period, denoted by A[…]. In this case we have that A[3, 5] = 3.75 years. Other configurations of asteroids also yield an alignment period of 3.75 years. A[1, 3, 5] = 3.75, for example. The configuration [1, 3, 5] is shown in the diagram at the bottom right at the 2-year mark, before it first aligns.
+
+There are 9 configurations of asteroids which have an alignment period of 3.75 years. We denote this by writing C(3.75) = 9. These configurations are [1, 3, 5], [1, 3, 5, 15], [1, 3, 15], [1, 5, 15], [3, 5], [3, 5, 15], [5, 15], [6, 30], and [7, 105].
+
+You are further given that C(30) = 3747, that A[23, 29, 67] = 11172.25 years, and that A[2, 3, 5, 6, 8, 11, 18] = 1980 years.
+
+What is C(510510)? Supply the last 12 digits of this number as your answer.
+
+Skewed Multiples (http://www.adccpt.com/#/challenges/2c9f9c2e6b4077f5016b5cb217930004)
+----------------
+Consider a list of decreasing positive integers that are mutually coprime, i.e. have no common divisors larger than 1.
+The list L = [20, 19, 17, 13] is such a list. For L there exists infinitely many numbers Y such that:
+— 20 divides Y
+— 19 divides Y - 20
+— 17 divides Y - 20 - 19, and
+— 13 divides Y - 20 - 19 - 17.
+Let X be the smallest possible value of Y. For L, X(L) = 53980.
+
+We’ll call lists like L skewed lists, and minimum multiples like X(L) skewed multiples.
+
+In general, let S(M, N) be the set of skewed lists of M elements, where the elements are no larger than N. For example, S(4,20) contains the skewed lists [20,19,17,13], [20,19,17,11], …, [5, 3, 2, 1]. Each of these lists has a skewed multiple, and the maximum among them is denoted as P(M, N).
+
+You are given that P(4, 20) = 55252, which happens to be the skewed multiple of the list [19, 17, 16, 15].
+
+Find P(10, 1000000). Provide the last 12 digits of this number as your answer.
+
+
+Quasi-convex Arrangements (http://www.adccpt.com/#/challenges/2c9f9251636fc3020168b5ece9a50148)
+-------------------------
+A quasi-convex arrangement of squares is an arrangement of N unit squares such that:
+—Each square is joined to at least one other square at a shared edge,
+—From any square in the arrangement, all others may be reached by traversing shared edges, i.e. no square or group of squares is joined to the rest via a corner only,
+—Each row of the arrangement is one or more contiguous squares, i.e. has no gaps, and
+—Each column, similarly, has no gaps.
+In the diagram, shapes 1 and 2 are quasi-convex arrangements of 9 unit squares. Shape 3 is not a quasi-convex arrangement as both its 1st column and its 3rd row have gaps. Neither is shape 4, as the two squares in its 4th column are not connected to the rest of the shape via shared edges.
+
+
+Shapes 1 and 2 in the diagram both have a perimeter of 14. They are 2 of the 72 quasi-convex arrangements of 9 unit squares with a perimeter of 14.
+
+
+How many quasi-convex arrangements of 100 unit squares have a perimeter of 100? (provide the last 9 digits of this number as your answer)
+
+
+Reversi (http://www.adccpt.com/#/challenges/2c9f81d8636fcbba016374055ab40000)
+-------
+The game of Reversi is played with reversible disks on an 8x8 board. Disks are black on one side, and white on the other. Play starts as shown in diagram 1. Black plays first.
+
+At her turn, a player places a disk of her colour (facing up) in an empty square of the board adjacent to a disk showing the opponent’s colour in such a way that the opponent’s disk, or a row of disks, lies between the disk being placed and another disk of the player’s colour. All disks of the opponent’s colour between these two disks are flipped to the player’s colour. It often happens that disks in more than one of the eight directions need to be flipped.
+
+Diagram 2 shows possible moves for black for a given game position. Placing a black disk at any of the indicated positions will flip at least one white disk between the new black disk, and one already on the board.
+
+If a player cannot move, the opponent moves again. If neither can move, the game is over, and the player with the most disks of her colour is the winner.
+
+In how many ways can a game be played to end with the board in the state indicated in diagram 3?
+
+
+Polyomino tiling (http://www.adccpt.com/#/challenges/2c9f8c676142cba90161fd6fae93001d)
+----------------
+A 2N x 2N square grid is tiled with 4N identical polyominoes, each comprising N squares fused at their edges (polyominoes in which some square is only connected at its corners to other squares are not allowed). The polyomino may be flipped and rotated when placed into the grid.
+
+There are 226 ways to achieve this for a 6 x 6 grid, using 12 polyominoes comprised of 3 squares. Four of these tilings are shown in the diagram.
+
+Note that each tiling uses a single piece, and that different polyominoes are not mixed.
+
+In how many ways may a 16 x 16 square be tiled with 32 polyominoes, each comprising 8 squares joined at their edges, using for each tiling a single polyomino, flipped and rotated as necessary?
+
+
+Rising Numbers (http://www.adccpt.com/#/challenges/2c9f93795dc0953f015e77f518c20044)
+--------------
+A rising number is a positive decimal integer of which no digit is smaller than
+a digit to its left. The numbers 1234 and 455567778 are both rising numbers,
+while 1232 and 17880 are not.
+
+The sum of rising numbers less than 10^{3} is 60885. What is the sum of rising
+numbers less than 10^{1000,000,000}? Supply only the last 12 digits of this sum
+as your answer.
+
+
+Super Cranky Integers (http://www.adccpt.com/#/challenges/2c9f8ed1550b640501553918f7f00051)
+---------------------
+The integer 351 has the property that 3 x 51 = 153, the digit-reverse of 351. The same is true for 425322, since 42 x 5322 = 223524, and also for 57982563, since 579825 x 63 = 36528975.
+
+Positive integers larger than 9 which have this property when written in decimal are called cranky.
+
+The sum of all cranky integers smaller than 10^{6} is 1778723. What is the sum of all cranky integers smaller than 10^{14}?
+
+
+8-Puzzle (http://www.adccpt.com/#/challenges/2c9f9f0c545bb87e01550116248200df)
+--------
+The 8-puzzle is a square array of sliding tiles confined to a frame which restricts the movement of the tiles. There are 8 tiles and 1 space. With each move, a tile is moved into the position of the space.
+
+In the diagram, an 8-puzzle is shown after it has been scrambled (labelled Start). It takes a minimum of 20 moves to achieve the solved state. If moves are made at random instead, how many moves on average, rounded to 2 decimal places, will it take to solve the puzzle?
+
+
+Harder Maze (http://www.adccpt.com/#/challenges/2c9f9f0c545bb87e015494c50941003d)
+-----------
+Note that this is a harder version of the problem entitled "Maze"
+
+If each of the cells of a square NxN grid contains one of two possible diagonal lines, 2^{NxN} different maze-like patterns may be made. A pattern is considered open if at least one path exists that extends from the very top of the grid to its very bottom.
+
+In the diagram, 9 of the 512 different patterns that may be made in a 3x3 grid are shown, 4 of which are open. There are 74 other open patterns for a 3x3 grid.
+
+How many open patterns may be made in an 8x8 grid?
+
+
+Maze (http://www.adccpt.com/#/challenges/2c9f9f0c545bb87e015494c00b11003c)
+----
+If each of the cells of a square NxN grid contains one of two possible diagonal lines, 2^{NxN} different maze-like patterns may be made. A pattern is considered open if at least one path exists that extends from the very top of the grid to its very bottom.
+
+In the diagram, 9 of the 512 different patterns that may be made in a 3x3 grid are shown, 4 of which are open. There are 74 other open patterns for a 3x3 grid.
+
+How many open patterns may be made in a 6x6 grid?
+
+
+King's Tours (http://www.adccpt.com/#/challenges/2c9f9f0c545bb87e015495a09bbb003e)
+------------
+A chess King may move one square in any of 8 directions, horizontally, vertically and diagonally. The King starts in the upper-left corner of a 3 x N board (3 squares high, N squares wide) and tours the board by moving so that he visits each square exactly once and ends in the bottom-left corner of the board.
+
+In the diagram, one of the possible 30 tours on a 3 x 3 board is shown.
+
+How many King's tours are possible on a 3 x 10^{6} board? Supply only the last 9 digits of this number as your answer.
